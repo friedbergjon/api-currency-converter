@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from 'axios'
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -25,33 +26,55 @@ class App extends Component {
 
   async getCurrencyData(event) {
     event.preventDefault();
-   
-    const url = "http://data.fixer.io/api/latest?access_key=";
-    const api_key = "19a134dc8bb335545f8993b6da04b496";
-    const res = await axios(`${url}${api_key}`);
-    console.log(res.data);
+    // from = this.state.from
+  //   const countryTo = this.state.to
+   const countryFrom = this.state.from
+    const url = "https://api.exchangeratesapi.io/latest?symbols=";
+
+    // const res = await axios(`${url}`);
+    const resFrom = await axios(`${url}${countryFrom}`);
+    // const resTo = await axios(`${url}${countryTo}`);
+    // console.log(resFrom.data.rates);
+    // console.log(resTo.data.rates);
+    console.log(resFrom.data.rates)
+
     this.setState({
-     
-//
+    //  resultFrom: resFrom.data.rates,
+    //   resultTo: resTo.data.rates,
+    //   result: res.data.rates
   })
   }
 
+ 
+//    countries = result.map((country, index) =>
+//   // Only do this if items have no stable IDs
+//   <li key={index}>
+//     {country.text}
+//   </li>
+// );
   render() {
-
-
+      
+    // const allCountries = result.map((country) => {
+    //   return (
+    //     <Countries
+    //     country={country} 
+    //     />
+    //   )
+    // })
     
     return (
       <div className="App">
         <br />
        <form onSubmit={this.getCurrencyData}>
       <div>
-          <input type="text" name="from" value={this.state.from} onChange={this.handleInputChange}/>
+         <input type="text" name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
           <h1>Country From</h1>
-          <input type="text" name="to" value={this.state.to} onChange={this.handleInputChange}/>
-          <h1>Country To</h1>
-          <input type="text" name="amount" value={this.state.amount} onChange={this.handleInputChange}/>
-          <h1>Amount</h1>
-  	      <input type="submit" value="Result"/>
+          <input type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>
+          <h1>Country To</h1> */}
+          {/* <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
+          <h1>Amount</h1> */}
+  	      <input type="submit" value="result"/>
+         {/* <h1>{this.state.resultFrom}</h1>  */}
          <br />
          </div>
         </form>
