@@ -15,6 +15,7 @@ May 31st	Present	Incomplete
 Project Description
 
 My project is a currency converter which gathers data from an API and allows you to convert any currency based on the amount and conversion rate between two countries.
+ -https://exchangeratesapi.io/
 
 Wireframes
 
@@ -42,7 +43,7 @@ MVP
 
 
 PostMVP
--Mobile responsiveness - 8 hrs      -Flag icon for each country- another API - 6 hrs
+-Mobile responsiveness - 8 hrs      -Flag icon for each country- another API - 6 hrs --https://www.countryflags.io/
 
 
 Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
