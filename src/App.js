@@ -35,9 +35,11 @@ class App extends Component {
   
     const resFrom = await axios(`${url}${countryFrom}`);
     const resTo = await axios(`${url}${countryTo}`);
-  
+    const res = await axios(`${url}`);
+
     console.log(resFrom.data.rates[countryFrom])
     console.log(resTo.data.rates[countryTo])
+    console.log(res)
     //help passing individual country data in the proper syntax from Tyson Morris//
 
     this.setState({
