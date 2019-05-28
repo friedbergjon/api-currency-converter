@@ -27,7 +27,7 @@ class App extends Component {
   async getCurrencyData(event) {
     event.preventDefault();
   
-    
+    const amount = this.state.amount
    const countryFrom = this.state.from
    const countryTo = this.state.to
     const url = "https://api.exchangeratesapi.io/latest?symbols=";
@@ -43,7 +43,7 @@ class App extends Component {
     this.setState({
      resultFrom: resFrom.data.rates[countryFrom],
       resultTo: resTo.data.rates[countryTo],
-      result: (resFrom.data.rates[countryFrom]) / (resTo.data.rates[countryTo])
+      result: ((resFrom.data.rates[countryFrom]) / (resTo.data.rates[countryTo])) * amount
  
   })
   }
@@ -59,15 +59,13 @@ class App extends Component {
         <br />
        <form onSubmit={this.getCurrencyData}>
       <div>
+         <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
+          <h1>Amount</h1>
          <input type="text" name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
           <h1>Country From</h1>
           <input type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>
           <h1>Country To</h1> 
-          {/* <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
-          <h1>Amount</h1> */}
   	      <input type="submit" value="result"/>
-         <h1>From: {this.state.resultFrom}</h1> 
-         <h1>To: {this.state.resultTo}</h1> 
          <h1>Result: {this.state.result}</h1>
          <br />
          </div>
