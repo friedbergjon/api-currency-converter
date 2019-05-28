@@ -26,41 +26,32 @@ class App extends Component {
 
   async getCurrencyData(event) {
     event.preventDefault();
-    // from = this.state.from
-  //   const countryTo = this.state.to
+  
+    
    const countryFrom = this.state.from
+   const countryTo = this.state.to
     const url = "https://api.exchangeratesapi.io/latest?symbols=";
 
-    // const res = await axios(`${url}`);
+  
     const resFrom = await axios(`${url}${countryFrom}`);
-    // const resTo = await axios(`${url}${countryTo}`);
-    // console.log(resFrom.data.rates);
-    // console.log(resTo.data.rates);
-    console.log(resFrom.data.rates)
+    const resTo = await axios(`${url}${countryTo}`);
+  
+    console.log(resFrom.data.rates[countryFrom])
+    console.log(resTo.data.rates[countryTo])
+    //help passing individual country data in the proper syntax from Tyson Morris//
 
     this.setState({
     //  resultFrom: resFrom.data.rates,
     //   resultTo: resTo.data.rates,
-    //   result: res.data.rates
+ 
   })
   }
 
  
-//    countries = result.map((country, index) =>
-//   // Only do this if items have no stable IDs
-//   <li key={index}>
-//     {country.text}
-//   </li>
-// );
+//
   render() {
       
-    // const allCountries = result.map((country) => {
-    //   return (
-    //     <Countries
-    //     country={country} 
-    //     />
-    //   )
-    // })
+   
     
     return (
       <div className="App">
@@ -70,7 +61,7 @@ class App extends Component {
          <input type="text" name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
           <h1>Country From</h1>
           <input type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>
-          <h1>Country To</h1> */}
+          <h1>Country To</h1> 
           {/* <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
           <h1>Amount</h1> */}
   	      <input type="submit" value="result"/>
