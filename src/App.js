@@ -41,8 +41,9 @@ class App extends Component {
     //help passing individual country data in the proper syntax from Tyson Morris//
 
     this.setState({
-    //  resultFrom: resFrom.data.rates,
-    //   resultTo: resTo.data.rates,
+     resultFrom: resFrom.data.rates[countryFrom],
+      resultTo: resTo.data.rates[countryTo],
+      result: (resFrom.data.rates[countryFrom]) / (resTo.data.rates[countryTo])
  
   })
   }
@@ -65,7 +66,9 @@ class App extends Component {
           {/* <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
           <h1>Amount</h1> */}
   	      <input type="submit" value="result"/>
-         {/* <h1>{this.state.resultFrom}</h1>  */}
+         <h1>From: {this.state.resultFrom}</h1> 
+         <h1>To: {this.state.resultTo}</h1> 
+         <h1>Result: {this.state.result}</h1>
          <br />
          </div>
         </form>
