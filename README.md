@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview
+Project Schedule
+This schedule will be used to keep track of your progress throughout the week and align with our expectations.
 
-## Available Scripts
+You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
 
-In the project directory, you can run:
+Day	Deliverable	Status
+May 6th	Project Description	Complete
+May 6th	Wireframes / Priority Matrix / Functional Components	Complete
+May 7th	Core Application Structure (HTML, CSS, etc.)	Complete
+May 7th	Pseudocode / actual code	Complete
+May 8th	Initial Clickable Model	Complete
+May 9th	MVP	Complete
+May 10th	Present	Incomplete
+Project Description
+The game frogger, grass on top and bottom of screen, road with lanes in the middle. Frog tries to hop from one end of screen to the other (bottom to top), if frog gets to top, win, level up
 
-### `npm start`
+Wireframes
+Wireframe 1
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Wireframe 2] (https://git.generalassemb.ly/friedbergjon/frogger/blob/23a3eb526026b24b471642ff12276e6aec536d8a/Project_1_pics/20190506_115035.jpg)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+[Wireframe 3] (https://git.generalassemb.ly/friedbergjon/frogger/blob/23a3eb526026b24b471642ff12276e6aec536d8a/Project_1_pics/20190506_115044.jpg)
 
-### `npm test`
+Priority Matrix
+Include a full list of features that have been prioritized based on the Time and Importance Matix.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Matrix] (https://git.generalassemb.ly/friedbergjon/frogger/blob/23a3eb526026b24b471642ff12276e6aec536d8a/Project_1_pics/20190506_122912.jpg)
 
-### `npm run build`
+MVP
+-Collision between Frog and Car 5 hrs
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Displaying grass outside of window view with continual level increase 5 hrs
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+-Frog and car movement 4 hrs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-Changing and displaying score 3 hrs
 
-### `npm run eject`
+PostMVP
+-Car-speed change with level increase 3 hrs -Potholes in road 3 hrs -graphics and animations 3 hrs
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Component	Priority	Estimated Time	Time Invested	Actual Time
+Collision between Frog and Car	H	5hrs	10hrs	2hrs
+-Displaying grass outside of window view with continual level increase	H	5hrs	N/Ahrs	hrs
+-Frog and car movement	H	4hrs	10hrs	2hrs
+-Changing and displaying score	H	3hrs	NAhrs	NAhrs
