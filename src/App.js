@@ -30,10 +30,12 @@ class App extends Component {
     event.preventDefault();
     
     const amount = this.state.amount
-   const countryFrom = this.state.from
-   const countryFromSubstring = this.state.from.substring(0,2)
-   const countryTo = this.state.to
-   const countryToSubstring = this.state.to.substring(0,2)
+   const countryFrom = this.state.from.toUpperCase()
+  
+  //  const countryFromSubstring = this.state.from.substring(0,2)
+   const countryTo = this.state.to.toUpperCase()
+ 
+  //  const countryToSubstring = this.state.to.substring(0,2)
     const url = "https://api.exchangeratesapi.io/latest?symbols=";
     const flagUrl = "https://www.countryflags.io/"
   
@@ -52,7 +54,7 @@ class App extends Component {
     this.setState({
      resultFrom: resFrom.data.rates[countryFrom],
       resultTo: resTo.data.rates[countryTo],
-      result: ((resFrom.data.rates[countryFrom]) / (resTo.data.rates[countryTo])) * amount,
+      result: ( (resTo.data.rates[countryTo]) / (resFrom.data.rates[countryFrom])) * amount
       // flagTo : flagToUrl,
       // flagFrom : flagFromUrl
   })
@@ -68,13 +70,14 @@ class App extends Component {
       <div className="App">
         <br />
        <form onSubmit={this.getCurrencyData}>
-         <div><img src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" /></div>
-      <div>
-      
+        
+      <div className="main">
          <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
           <h1>Amount</h1>
          <input type="text" name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
           <h1>Country From </h1>
+        <img style={{width: 50, height: 60, borderRadius: 870}} src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />
+      <br />
           {/* <img src=`https://www.countryflags.io/${countryFromSubstring}/shiny/64.png`></img> */}
           <input type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>
           <h1>Country To </h1> 

@@ -7,10 +7,10 @@ You are responsible for scheduling time with your squad to seek approval for eac
 Day	Deliverable	Status
 May 24th	Project Description	Complete
 May 24th	Wireframes / Priority Matrix / Functional Components	Complete
-May 30th	Core Application Structure (HTML, CSS, etc.)	Incomplete
-May 30th	Pseudocode / actual code	Incomplete
-May 30th	Initial Clickable Model	Incomplete
-May 30th	MVP	Incomplete
+May 30th	Core Application Structure (HTML, CSS, etc.)	Completed
+May 30th	Pseudocode / actual code	Complete
+May 30th	Initial Clickable Model	Complete
+May 30th	MVP	Complete
 May 31st	Present	Incomplete
 Project Description
 
@@ -50,6 +50,6 @@ Time frames are also key in the development cycle. You have limited time to code
 
 Component	Priority	Estimated Time	Time Invested	Actual Time
 -Styling browser content	5hrs	
--Retrieve data from API	5hrs	
--Send data from API to browser  7hrs
+-Retrieve data from API	5hrs	 1hrs 1hr
+-Send data from API to browser  7hrs 2hrs 1hr
 -Coin Animation/Icon 3hrs
