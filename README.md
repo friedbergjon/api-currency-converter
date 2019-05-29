@@ -52,4 +52,4 @@ Component	Priority	Estimated Time	Time Invested	Actual Time
 -Styling browser content	5hrs	
 -Retrieve data from API	5hrs	 1hrs 1hr
 -Send data from API to browser  7hrs 2hrs 1hr
--Coin Animation/Icon 3hrs
+-Coin Animation/Icon 3hrs 1hr    5hrs (to make from scratch rather than find online)
