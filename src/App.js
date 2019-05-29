@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
-import axios from 'axios'
+import axios from "axios";
+
 
 const flagUrl = "https://www.countryflags.io/"
 
@@ -11,8 +12,8 @@ class App extends Component {
     this.state = {
      from: "",
      to: "",
-     amount: ""
-     
+     amount: "",
+     countries: {},
     }
 
     this.getCurrencyData = this.getCurrencyData.bind(this);
@@ -24,6 +25,22 @@ class App extends Component {
     this.setState({
       
       [event.currentTarget.name]: event.currentTarget.value
+    })
+  }
+
+  addDefaultSrcFrom(event){
+    event.target.src = "https://cdn130.picsart.com/290045826002201.jpg?c256x256"
+  }
+  addDefaultSrcTo(event){
+    event.target.src = "https://cdn130.picsart.com/290045826002201.jpg?c256x256"
+  }
+
+  async componentDidMount() {
+    const url = "https://api.exchangeratesapi.io/latest?symbols=";
+    const res = await axios(`${url}`);
+    console.log(res.data.rates)
+    this.setState({
+      countries: res.data.rates
     })
   }
 
@@ -40,16 +57,15 @@ class App extends Component {
     const resFrom = await axios(`${url}${countryFrom}`);
     const resTo = await axios(`${url}${countryTo}`);
     const res = await axios(`${url}`);
-    // const resFlagFrom = await axios(`${flagUrl}${countryFromSubstring}/shiny/64.png`);
-    // const resFlagTo = await axios(`${flagUrl}${countryToSubstring}/shiny/64.png`);
+ 
     console.log(resFrom.data.rates[countryFrom])
-    console.log(resTo.data.rates[countryTo])
+    // console.log(resTo.data.rates[countryTo])
     console.log(res)
-   console.log(countryFromSubstring)
-   console.log(countryToSubstring)
+  //  console.log(countryFromSubstring)
+  //  console.log(countryToSubstring)
     //help passing individual country data in the proper syntax from Tyson Morris//
-
     this.setState({
+      // countries: res.data.rates,
      resultFrom: resFrom.data.rates[countryFrom],
       resultTo: resTo.data.rates[countryTo],
       result: ( (resTo.data.rates[countryTo]) / (resFrom.data.rates[countryFrom])) * amount,
@@ -58,13 +74,11 @@ class App extends Component {
 
    
   })
+  console.log(this.state.countries)
   }
-
  
 //if this.state.from[0,1] === resultFrom, then return this.state.from
   render() {
-      
-   
     
     return (
       <div className="App">
@@ -73,20 +87,29 @@ class App extends Component {
   <div className="amounts">
            <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
           <h1>Amount</h1>
+          </div>
+   <div className="main">
+           <input type="text" style={{width: 80, height: 20}} name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
+          <h1>Country From </h1>
+          <img src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/>
+        <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />
+          <input id = "to" type="text" style={{width: 80, height: 20 }} name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>
+          <h1>Country To </h1> 
+          <img src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
+          {/* // https://stackoverflow.com/questions/38527759/how-to-check-for-broken-images-in-react-js */}
+   </div>  
+   <div className="result">
           <input type="submit" value="result"/>
          <h1>Result: {this.state.result}</h1>
     </div>
-   <div className="main">
-           <input type="text" name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
-          <h1>Country From </h1>
-          <img src={`${flagUrl + this.state.flagFrom}/shiny/64.png`}/>
-        <img style={{width: 50, height: 60, borderRadius: 870}} src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />
-          <input type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>
-          <h1>Country To </h1> 
-          <img src={`${flagUrl + this.state.flagTo}/shiny/64.png`}/>
-   </div>  
+    </form>
+    {Object.keys(this.state.countries).map((key) => ( 
+  <div className="map">
+  <h2>{key}</h2>
+  </div>
+  ))}
   
-       </form>
+      
        </div>
     )
   }

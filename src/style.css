@@ -2,25 +2,58 @@
   margin: 0 auto;
  position: center;
  display: flex;
- 
+ justify-content: center;
  flex-direction: column;
-  
+  max-width: 70%;
  
 
 }
 
+#from {
+    width: 80;
+     height: 20;
+}
+#to{
+    margin-left: -20%;
+    width: 80;
+     height: 20
+}
 .main {
+   margin-left: 16%;
     position: relative;
-    display: flex;
-    justify-content: flex-start;
-   margin-bottom: -30%;
- 
-
+    display: inline-flex;
+    justify-content:center;
+    
 }
 .amounts {
-    width: 50%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     margin-left: 33.333333%;
     margin-top: 10%;
+}
+
+.result {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 33.333333%;
+    margin-top: 10%;
+}
+
+#coins{
+   margin-right: 33%;
+   width: 10%;
+    height: 15%;
+     border-radius: 50%;
+}
+
+h1{
+    display: flex;
+}
+
+#map {
+    display: inline;
+    width: 10%;
+    border: 1px;
 }
