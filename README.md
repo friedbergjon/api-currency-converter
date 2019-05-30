@@ -48,8 +48,9 @@ PostMVP
 
 Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-Component	Priority	|Estimated Time|	Time Invested|	Actual Time
--Styling browser content	|5hrs	 |4hrs  |2hrs
--Retrieve data from API|	5hrs	| 1hrs |1hr
--Send data from API to browser | 7hrs |2hrs |1hr
--Coin Animation/Icon| 3hrs  | 1hrs  |  5hrs 
+|Component |	Priority	|Estimated Time|	Time Invested|	Actual Time
+| --- | :---: |  :---: | :---: | :---: |
+|-Styling browser content||5hrs	 |4hrs  |2hrs
+|-Retrieve data from API|	5hrs	| 1hrs |1hr
+|-Send data from API to browser | 7hrs |2hrs |1hr
+|-Coin Animation/Icon| 3hrs  | 1hrs  |  5hrs 
