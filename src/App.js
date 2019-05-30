@@ -80,17 +80,20 @@ class App extends Component {
  
 //if this.state.from[0,1] === resultFrom, then return this.state.from
   render() {
-    
+    // let select = Object.keys(this.state.countries).map((key) => ( 
+    //   <ul>
+    //   <li>{key}</li>
+    //   </ul> ))
     return (
       
       <div className="App">
           
        <hr></hr>
        <div className= "mapkey">
-          {Object.keys(this.state.countries).map((key) => ( 
-          <ul>
-          <li>{key}</li>
-          </ul> ))}
+       {Object.keys(this.state.countries).map((key) => ( 
+      <ul>
+      <li>{key}</li>
+      </ul> ))}
       </div>
       <form onSubmit={this.getCurrencyData}>
           <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />

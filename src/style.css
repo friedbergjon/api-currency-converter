@@ -134,6 +134,10 @@ hr.bottom-line{
 }
 h1{
     font-family: 'Playfair Display', serif;
+  margin-left: -3%;
+    line-height: .4em
+    /* https://stackoverflow.com/questions/2539207/how-to-change-the-strike-out-line-through-thickness-in-css */
+    
 }
 h2{
     margin-left: -33%;
