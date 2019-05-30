@@ -101,16 +101,15 @@ class App extends Component {
           <input className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>  
           {/* // https://stackoverflow.com/questions/38527759/how-to-check-for-broken-images-in-react-js */}
       </div> 
-      <div className ="flag">
-          <img  src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
-          <img  src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
-          </div>
       <div className="result">
-          <input type="submit" value="result"/>
+          <input className = "resultSubmit" type="submit" value="result"/>
          <h2>{this.state.result}</h2>
-    </div>
-      
+    </div>     
     </form>
+  <div className ="flag">
+          <img class="flagFrom" src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
+          <img class="flagTo" src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
+          </div>
     {/* <div className= "mapkey">
           {Object.keys(this.state.countries).map((key) => ( 
           <h6>{key}</h6> ))}
