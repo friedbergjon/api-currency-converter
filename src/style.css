@@ -62,7 +62,9 @@
   }
   
   #coins{
-     margin-right: 33%;
+      margin-top: 5%;
+     margin-left: 45%;
+     margin-bottom: -10%;
      width: 10%;
       height: 15%;
        border-radius: 50%;
@@ -81,7 +83,7 @@
       max-width: 1em;
   }
   h2{
-      margin-bottom: -60%;
+      margin-left: -33%;
   }
   h6 {
       

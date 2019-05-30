@@ -84,8 +84,9 @@ class App extends Component {
       
       <div className="App">
        
-       {/* <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" /> */}
+     
       <form onSubmit={this.getCurrencyData}>
+          <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />
   <div className="amounts">
       <h1>Enter Amount</h1>
         </div>
