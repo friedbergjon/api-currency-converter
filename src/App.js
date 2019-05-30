@@ -81,34 +81,40 @@ class App extends Component {
   render() {
     
     return (
+      
       <div className="App">
+       
+       {/* <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" /> */}
       <form onSubmit={this.getCurrencyData}>
-  
   <div className="amounts">
-           <input type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
-          <h1>Amount</h1>
-          </div>
-   <div className="main">
-           <input type="text" style={{width: 80, height: 20}} name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
-          <h1>Country From </h1>
-          <img src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/>
-        <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />
-          <input id = "to" type="text" style={{width: 80, height: 20 }} name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>
-          <h1>Country To </h1> 
-          <img src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
+      <h2>Amount</h2>
+        </div>
+       <div>
+         <input className = "amountInput" type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
+       </div>
+ <div className = "fromAndToLabels">
+      <h3>Country From </h3>
+      <h3>Country To </h3> 
+      </div>   
+   <div className="fromAndToInput">
+           <input className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
+          <input className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>  
           {/* // https://stackoverflow.com/questions/38527759/how-to-check-for-broken-images-in-react-js */}
-   </div>  
-   <div className="result">
+      </div> 
+      <div className ="flag">
+          <img  src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
+          <img  src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
+          </div>
+      <div className="result">
           <input type="submit" value="result"/>
-         <h1>Result: {this.state.result}</h1>
+         <h3>{this.state.result}</h3>
     </div>
+      
     </form>
-    {Object.keys(this.state.countries).map((key) => ( 
-  <div className="map">
-  <h2>{key}</h2>
-  </div>
-  ))}
-  
+    {/* <div className= "mapkey">
+          {Object.keys(this.state.countries).map((key) => ( 
+          <h6>{key}</h6> ))}
+      </div> */}
       
        </div>
     )
