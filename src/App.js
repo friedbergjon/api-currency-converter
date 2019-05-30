@@ -83,7 +83,7 @@ class App extends Component {
     return (
       
       <div className="App">
-       
+       <hr></hr>
      
       <form onSubmit={this.getCurrencyData}>
           <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />
@@ -115,8 +115,9 @@ class App extends Component {
           {Object.keys(this.state.countries).map((key) => ( 
           <h6>{key}</h6> ))}
       </div> */}
-      
+      <hr className= "bottomLine"></hr>
        </div>
+       
     )
   }
 }

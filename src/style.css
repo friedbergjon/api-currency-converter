@@ -61,17 +61,17 @@ body {
   .result {
       width: 20%;
       margin-left: 46%; 
-      margin-bottom: 10%
+      margin-bottom: 15%
   }
 
   .resultSubmit{
      
       font-size: 1em;
-      margin-bottom: 10%
+      margin-bottom: 15%
   }
   
   #coins{
-      margin-top: 5%;
+      margin-top: -5%;
      margin-left: 45%;
      margin-bottom: -10%;
      width: 10%;
@@ -116,3 +116,21 @@ body {
     margin-left: 3%;
     height: 4em
 }
+hr { 
+    margin-top: 2em;
+    margin-bottom: -5%;
+    display: block;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    width: 90%;
+}
+hr.bottomLine{
+    display: block;
+    border-style: inset;
+    border-width: 1px;
+    width: 90%;
+    margin-bottom: 15%;
+    margin-top: -15%
+}
+/* https://love2dev.com/blog/html-horizontal-line/ */
