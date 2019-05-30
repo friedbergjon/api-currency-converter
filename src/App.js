@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
+import LineTop from "./components/LineTop";
+import LineBottom from "./components/LineBottom"
+import Flags from "./components/Flags"
 
 
-const flagUrl = "https://www.countryflags.io/"
+
 
 class App extends Component {
   constructor(props) {
@@ -59,10 +62,9 @@ class App extends Component {
     const res = await axios(`${url}`);
  
     console.log(resFrom.data.rates[countryFrom])
-    // console.log(resTo.data.rates[countryTo])
+  
     console.log(res)
-  //  console.log(countryFromSubstring)
-  //  console.log(countryToSubstring)
+ 
     //help passing individual country data in the proper syntax from Tyson Morris//
     this.setState({
       // countries: res.data.rates,
@@ -85,10 +87,9 @@ class App extends Component {
     //   <li>{key}</li>
     //   </ul> ))
     return (
-      
+      <div>
+      <LineTop />
       <div className="App">
-          
-       <hr></hr>
        <div className= "mapkey">
        {Object.keys(this.state.countries).map((key) => ( 
       <ul>
@@ -118,14 +119,12 @@ class App extends Component {
     </div> 
         
     </form>
-  <div className ="flag">
-          <img class="flag-from" src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
-          <img class="flag-to" src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
-          </div>
+          <Flags />
   
-      <hr className= "bottom-line"></hr>
+     
        </div>
-       
+       <LineBottom />
+       </div>
     )
   }
 }
