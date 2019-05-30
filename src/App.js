@@ -69,6 +69,7 @@ class App extends Component {
      resultFrom: resFrom.data.rates[countryFrom],
       resultTo: resTo.data.rates[countryTo],
       result: ( (resTo.data.rates[countryTo]) / (resFrom.data.rates[countryFrom])) * amount,
+      resultRounded: Math.floor((( (resTo.data.rates[countryTo]) / (resFrom.data.rates[countryFrom])) * amount)),
      flagFrom: countryFromSubstring,
      flagTo: countryToSubstring,
 
@@ -110,7 +111,7 @@ class App extends Component {
       </div> 
       <div className="result">
           <input className = "resultSubmit" type="submit" value="Result"/>
-          <h2>{this.state.result}</h2> 
+          <h2>{this.state.result > 1? this.state.resultRounded: this.state.result}</h2> 
     </div> 
         
     </form>
