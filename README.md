@@ -4,7 +4,7 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
 
-|Day	Deliverable	Status
+|Day|	Deliverable|	Status
 |---|---| ---|
 |May 24th|	Project Description	|Complete
 |May 24th|	Wireframes / Priority Matrix / Functional Components|	Complete
