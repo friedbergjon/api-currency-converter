@@ -103,7 +103,7 @@ class App extends Component {
           {/* // https://stackoverflow.com/questions/38527759/how-to-check-for-broken-images-in-react-js */}
       </div> 
       <div className="result">
-          <input className = "resultSubmit" type="submit" value="result"/>
+          <input className = "resultSubmit" type="submit" value="Result"/>
          <h2>{this.state.result}</h2>
     </div>     
     </form>

@@ -1,9 +1,10 @@
 body {
-    overflow: hidden
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .App {
-    margin: 0 auto;
+   
    position: center;
    display: flex;
    justify-content: center;
@@ -59,17 +60,18 @@ body {
   
   .result {
       width: 20%;
-      margin-left: 45%; 
+      margin-left: 46%; 
+      margin-bottom: 10%
   }
 
   .resultSubmit{
      
-    
-      font-size: 2em
+      font-size: 1em;
+      margin-bottom: 10%
   }
   
   #coins{
-      margin-top: 15%;
+      margin-top: 5%;
      margin-left: 45%;
      margin-bottom: -10%;
      width: 10%;
@@ -105,12 +107,12 @@ body {
   }
 
   .flagFrom{
-      margin-top: -25%;
+      margin-top: -35%;
       margin-left: -13%;
       height: 4em
   }
   .flagTo{
-    margin-top: -25%;
+    margin-top: -35%;
     margin-left: 3%;
     height: 4em
 }
