@@ -87,7 +87,7 @@ class App extends Component {
        {/* <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" /> */}
       <form onSubmit={this.getCurrencyData}>
   <div className="amounts">
-      <h2>Amount</h2>
+      <h1>Enter Amount</h1>
         </div>
        <div>
          <input className = "amountInput" type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
@@ -107,7 +107,7 @@ class App extends Component {
           </div>
       <div className="result">
           <input type="submit" value="result"/>
-         <h3>{this.state.result}</h3>
+         <h2>{this.state.result}</h2>
     </div>
       
     </form>

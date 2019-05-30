@@ -11,14 +11,14 @@
 }
 
 .from {
-    margin-left:13%;
+    margin-left:12%;
     width: 80;
      margin-bottom:90%;
 
      
 }
 .to{
-    
+    margin-left: 2%;
     width: 80;
      margin-bottom:90%;
    
@@ -29,27 +29,28 @@
 
     display: flex;
     justify-content: space-around;
-    margin-bottom: -90%
+    margin-bottom: -90%;
+    margin-left: -15%
 
     
 }
 .fromAndToLabels{
    display: flex;
    justify-content: space-around;
-   margin-left: 12%
+   margin-left: -3%
 }
 h3 {
     display: inline;
 }
 .amounts {
-    width: 20%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-top: 10%;
 }
 .amountInput{
-  margin-left: 50%
+  margin-left: 43.5%
 }
 
 .result {
@@ -81,7 +82,9 @@ h3 {
     max-height: 1em;
     max-width: 1em;
 }
-
+h2{
+    margin-bottom: -60%;
+}
 h6 {
     
     margin: -20%;
