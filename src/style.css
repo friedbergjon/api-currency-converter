@@ -50,7 +50,8 @@ body {
       display: flex;
       flex-direction: column;
       margin-left: 40%;
-      margin-top: 10%;
+      margin-bottom: -1%
+     
   }
   .amountInput{
     margin-left: 43.5%
@@ -58,23 +59,24 @@ body {
   
   .result {
       width: 20%;
-      margin-left: 50%; 
-      margin-bottom: 15%;
+      margin-left: 49%; 
+      margin-bottom: 20%;
       
   }
 
   .resultSubmit{
      
       font-size: 1em;
-      margin-bottom: 15%;
+      margin-bottom: 5%;
       font-family: 'Playfair Display', serif;
-      margin-left: -17%;
+      margin-left: -15%;
+      margin-top: -10%
   }
   
   #coins{
-      margin-top: 10%;
-     margin-left: 45%;
-     margin-bottom: -10%;
+     
+     margin-left: 44%;
+     margin-bottom: -6%;
      width: 10%;
       height: 10%;
        border-radius: 50%;
@@ -88,13 +90,14 @@ body {
   }
   
   .mapkey {
-      margin-right: 20%;
-      max-height: 1em;
+      margin-left: 10%;
+      max-height: .6em;
       max-width: 1em;
+      margin-top: 10%;
   }
  
   .flag {
-      margin-top: 6%;
+     
      margin-left: 10%;
       display: flex;
       justify-content: space-around;
@@ -126,7 +129,8 @@ hr.bottomLine{
     border-width: 1px;
     width: 90%;
     margin-bottom: 15%;
-    margin-top: -15%
+    margin-top: -10%;
+   
 }
 h1{
     font-family: 'Playfair Display', serif;
@@ -134,10 +138,19 @@ h1{
 h2{
     margin-left: -33%;
     font-family: 'Playfair Display', serif;
+    padding-bottom: 1em
 }
 
 h3 {
   display: inline;
   font-family: 'Playfair Display', serif;
+}
+
+ul {
+    font-size: 20%;
+    font-style: bold;
+    margin-top: -15%;
+    margin-bottom: -.2em;
+    padding: .2em;
 }
 /* https://love2dev.com/blog/html-horizontal-line/ */
