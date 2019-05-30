@@ -28,7 +28,7 @@ body {
        margin-bottom:90%;
      
   }
-  .fromAndToInput {
+  .from-and-to-input {
     
     
   
@@ -39,7 +39,7 @@ body {
   
       
   }
-  .fromAndToLabels{
+  .from-and-to-labels{
      display: flex;
      justify-content: space-around;
      margin-left: -3%
@@ -53,7 +53,7 @@ body {
       margin-bottom: -1%
      
   }
-  .amountInput{
+  .amount-input{
     margin-left: 43.5%
   }
   
@@ -64,7 +64,7 @@ body {
       
   }
 
-  .resultSubmit{
+  .result-submit{
      
       font-size: 1em;
       margin-bottom: 5%;
@@ -104,12 +104,12 @@ body {
       margin-bottom: -5%
   }
 
-  .flagFrom{
+  .flag-from{
       margin-top: -35%;
       margin-left: -13%;
       height: 4em
   }
-  .flagTo{
+  .flag-to{
     margin-top: -35%;
     margin-left: 3%;
     height: 4em
@@ -123,7 +123,7 @@ hr {
     border-width: 1px;
     width: 90%;
 }
-hr.bottomLine{
+hr.bottom-line{
     display: block;
     border-style: inset;
     border-width: 1px;

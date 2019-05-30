@@ -98,29 +98,29 @@ class App extends Component {
       <h1>Enter Amount</h1>
         </div>
        <div>
-         <input className = "amountInput" type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
+         <input className = "amount-input" type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
        </div>
- <div className = "fromAndToLabels">
+ <div className = "from-and-to-labels">
       <h3>Country From </h3>
       <h3>Country To </h3> 
       </div>   
-   <div className="fromAndToInput">
+   <div className="from-and-to-input">
            <input className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} placeholder="from" id="from"/>
           <input className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} placeholder="to" id="to"/>  
           {/* // https://stackoverflow.com/questions/38527759/how-to-check-for-broken-images-in-react-js */}
       </div> 
       <div className="result">
-          <input className = "resultSubmit" type="submit" value="Result"/>
+          <input className = "result-submit" type="submit" value="Result"/>
           <h2>{this.state.result > 1? this.state.resultRounded: this.state.result}</h2> 
     </div> 
         
     </form>
   <div className ="flag">
-          <img class="flagFrom" src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
-          <img class="flagTo" src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
+          <img class="flag-from" src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
+          <img class="flag-to" src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
           </div>
   
-      <hr className= "bottomLine"></hr>
+      <hr className= "bottom-line"></hr>
        </div>
        
     )
