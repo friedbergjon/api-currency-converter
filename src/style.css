@@ -59,7 +59,7 @@ body {
   
   .result {
       width: 20%;
-      margin-left: 49%; 
+      margin-left: 46%; 
       margin-bottom: 19%;
       
   }
@@ -69,7 +69,7 @@ body {
       font-size: 1em;
       margin-bottom: 5%;
       font-family: 'Playfair Display', serif;
-      margin-left: -15%;
+      margin-left: 3%;
       margin-top: -10%
   }
   
@@ -91,9 +91,9 @@ body {
   
   .mapkey {
       margin-left: 10%;
-      max-height: .6em;
+      max-height: .4em;
       max-width: 1em;
-      margin-top: 10%;
+      margin-top: 7%;
   }
  
   .flag {
@@ -129,7 +129,7 @@ hr.bottomLine{
     border-width: 1px;
     width: 90%;
     margin-bottom: 15%;
-    margin-top: -10%;
+    margin-top: -12%;
    
 }
 h1{
@@ -151,6 +151,6 @@ ul {
     font-style: bold;
     margin-top: -15%;
     margin-bottom: -.2em;
-    padding: .2em;
+    padding: .1em;
 }
 /* https://love2dev.com/blog/html-horizontal-line/ */
