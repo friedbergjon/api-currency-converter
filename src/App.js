@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
-import LineBottom from "./components/LineBottom";
+import LineTop from "./components/LineTop"
 import Mapkey from "./components/Mapkey";
 import Animation from "./components/Animation";
 
@@ -80,8 +80,8 @@ class App extends Component {
     return (
       
       <div className="App">  
-      <Mapkey />
-          <hr></hr>
+         <Mapkey />
+          <LineTop />
       <form onSubmit={this.getCurrencyData}>
          <Animation />
   <div className="amounts">
@@ -109,9 +109,8 @@ class App extends Component {
   <div className ="flag">
           <img class="flag-from" src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
           <img class="flag-to" src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
-          </div>
-          </container>
-      <LineBottom />
+     </div>
+    </container>
        </div>
        
     )

@@ -117,7 +117,7 @@ body {
     margin-left: 3%;
     height: 4em
 }
-hr { 
+hr.top-line { 
     margin-top: -2em;
     margin-bottom: -5%;
     display: block;
