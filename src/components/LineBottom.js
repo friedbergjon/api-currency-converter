@@ -13,10 +13,10 @@ class LineBottom extends Component{
     
         return (
 <div>
-            <br />
+        
           
             <hr className= "bottom-line"></hr>
-            </div>
+    </div>
         )}
 }
 

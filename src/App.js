@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
+import LineBottom from "./components/LineBottom";
 import LineTop from "./components/LineTop";
-import LineBottom from "./components/LineBottom"
-import Flags from "./components/Flags"
+import Animation from "./components/Animation";
 
 
-
+const flagUrl = "https://www.countryflags.io/"
 
 class App extends Component {
   constructor(props) {
@@ -62,9 +62,10 @@ class App extends Component {
     const res = await axios(`${url}`);
  
     console.log(resFrom.data.rates[countryFrom])
-  
+    // console.log(resTo.data.rates[countryTo])
     console.log(res)
- 
+  //  console.log(countryFromSubstring)
+  //  console.log(countryToSubstring)
     //help passing individual country data in the proper syntax from Tyson Morris//
     this.setState({
       // countries: res.data.rates,
@@ -82,14 +83,12 @@ class App extends Component {
  
 //if this.state.from[0,1] === resultFrom, then return this.state.from
   render() {
-    // let select = Object.keys(this.state.countries).map((key) => ( 
-    //   <ul>
-    //   <li>{key}</li>
-    //   </ul> ))
+   
     return (
-      <div>
-      <LineTop />
+      
       <div className="App">
+          
+       <LineTop />
        <div className= "mapkey">
        {Object.keys(this.state.countries).map((key) => ( 
       <ul>
@@ -97,7 +96,7 @@ class App extends Component {
       </ul> ))}
       </div>
       <form onSubmit={this.getCurrencyData}>
-          <img id = "coins" src="https://media.giphy.com/media/l3mZaGv4Krokd3GM0/giphy.gif" />
+         <Animation />
   <div className="amounts">
       <h1>Enter Amount</h1>
         </div>
@@ -119,14 +118,16 @@ class App extends Component {
     </div> 
         
     </form>
-          <Flags />
-  
-     
+    <container>
+  <div className ="flag">
+          <img class="flag-from" src={`${flagUrl + this.state.flagFrom}/shiny/64.png`} onError={this.addDefaultSrcFrom}/> 
+          <img class="flag-to" src={`${flagUrl + this.state.flagTo}/shiny/64.png`} onError={this.addDefaultSrcTo}/>
+          </div>
+          </container>
+      <LineBottom />
        </div>
-       <LineBottom />
-       </div>
+       
     )
   }
 }
 export default App; 
-

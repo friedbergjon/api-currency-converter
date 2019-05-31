@@ -42,8 +42,7 @@ body {
   .from-and-to-labels{
      display: flex;
      justify-content: space-around;
-     margin-left: -3%;
-     margin-top: -10%
+     margin-left: -3%
   }
   
   .amounts {
@@ -55,12 +54,13 @@ body {
      
   }
   .amount-input{
-    margin-left: 43.5%
+    margin-left: 43.5%;
+    margin-top: 1%;
   }
   
   .result {
       width: 20%;
-      margin-left: 53%; 
+      margin-left: 55.5%; 
       margin-bottom: 19%;
       
   }
@@ -70,7 +70,7 @@ body {
       font-size: 1em;
       margin-bottom: 5%;
       font-family: 'Playfair Display', serif;
-      margin-left: -30%;
+      margin-left: -43%;
       margin-top: -10%
   }
   
@@ -102,16 +102,16 @@ body {
      margin-left: 10%;
       display: flex;
       justify-content: space-around;
-      margin-bottom: -5%
+      margin-bottom: -1%
   }
 
   .flag-from{
-      margin-top: -35%;
-      margin-left: -13%;
+      margin-top: -43%;
+      margin-left: -14%;
       height: 4em
   }
   .flag-to{
-    margin-top: -35%;
+    margin-top: -43%;
     margin-left: 3%;
     height: 4em
 }
@@ -125,6 +125,7 @@ hr {
     width: 90%;
 }
 hr.bottom-line{
+   
     display: block;
     border-style: inset;
     border-width: 1px;
@@ -135,7 +136,7 @@ hr.bottom-line{
 }
 h1{
     font-family: 'Playfair Display', serif;
-  margin-left: -3%;
+    margin-left: -2%;
     line-height: .4em
     /* https://stackoverflow.com/questions/2539207/how-to-change-the-strike-out-line-through-thickness-in-css */
     
