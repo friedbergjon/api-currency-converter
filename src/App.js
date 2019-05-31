@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 import LineBottom from "./components/LineBottom";
-import LineTop from "./components/LineTop";
+import Mapkey from "./components/Mapkey";
 import Animation from "./components/Animation";
 
 
@@ -15,8 +15,8 @@ class App extends Component {
     this.state = {
      from: "",
      to: "",
-     amount: "",
-     countries: {},
+     amount: ""
+    
     }
 
     this.getCurrencyData = this.getCurrencyData.bind(this);
@@ -38,14 +38,7 @@ class App extends Component {
     event.target.src = "https://cdn130.picsart.com/290045826002201.jpg?c256x256"
   }
 
-  async componentDidMount() {
-    const url = "https://api.exchangeratesapi.io/latest?symbols=";
-    const res = await axios(`${url}`);
-    console.log(res.data.rates)
-    this.setState({
-      countries: res.data.rates
-    })
-  }
+ 
 
   async getCurrencyData(event) {
     event.preventDefault();
@@ -86,15 +79,9 @@ class App extends Component {
    
     return (
       
-      <div className="App">
-          
-       <LineTop />
-       <div className= "mapkey">
-       {Object.keys(this.state.countries).map((key) => ( 
-      <ul>
-      <li>{key}</li>
-      </ul> ))}
-      </div>
+      <div className="App">  
+      <Mapkey />
+          <hr></hr>
       <form onSubmit={this.getCurrencyData}>
          <Animation />
   <div className="amounts">
