@@ -78,7 +78,7 @@ body {
   #coins{
      
      margin-left: 44%;
-     margin-bottom: -6%;
+     margin-bottom: -12%;
      margin-top: 10%;
      width: 10%;
       height: 10%;
@@ -124,9 +124,9 @@ hr.top-line {
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    width: 90%;
+    width: 60%;
 }
-hr.bottom-line{
+/* hr.bottom-line{
    
     display: block;
     border-style: inset;
@@ -135,7 +135,7 @@ hr.bottom-line{
    
     margin-top: -20%;
    
-}
+} */
 h1{
     font-family: 'Playfair Display', serif;
     margin-left: -2%;
