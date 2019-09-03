@@ -15,6 +15,7 @@ async componentDidMount() {
             const url = "https://api.exchangeratesapi.io/latest?symbols=";
             const res = await axios(`${url}`);
             console.log(res.data.rates)
+            
             this.setState({
               countries: res.data.rates
             })
@@ -25,10 +26,10 @@ async componentDidMount() {
         return (
 
             <div className= "mapkey">
-            {Object.keys(this.state.countries).map((key) => ( 
+            {/* {Object.keys(this.state.countries).map((key) => ( 
            <ul>
            <li>{key}</li>
-           </ul> ))}
+           </ul> ))} */}
            </div>
      
 

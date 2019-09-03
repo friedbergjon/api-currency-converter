@@ -23,26 +23,23 @@ body {
        
   }
   .to{
-      margin-left: 2%;
+      margin-left: 40%;
       width: 80;
        margin-bottom:90%;
      
   }
   .from-and-to-input {
-    
-    
-  
       display: flex;
       justify-content: space-around;
       margin-bottom: -90%;
-      margin-left: -15%
+    
   
       
   }
   .from-and-to-labels{
      display: flex;
      justify-content: space-around;
-     margin-left: -3%
+     margin-left: -5%
   }
   
   .amounts {
@@ -61,7 +58,7 @@ body {
   
   .result {
       width: 20%;
-      margin-left: 55.5%; 
+      margin-left: 50.5%; 
       margin-bottom: 19%;
       
   }
