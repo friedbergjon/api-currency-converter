@@ -87,22 +87,82 @@ class App extends Component {
        </div>
    <div className="from-and-to-input">
    <container>
-  <div className ="flag">
+  <div className ="flag-from-div">
           <img class="flag-from" src={this.state.flagOn?`${flagUrl + this.state.flagFrom}/shiny/64.png`:null} onChange={this.getCurrencyData}/> 
           </div>
   </container>
            <select className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} id="from">
            <option value="USD">USD</option>
+           <option value="JPY">JPY</option>
+           <option value="BGN">BGN</option>
+           <option value="CZK">CZK</option>
+           <option value="DKK">DKK</option>
            <option value="GBP">GBP</option>
+           <option value="HUF">HUF</option>
+           <option value="PLN">PLN</option>
+           <option value="RON">RON</option>
+           <option value="SEK">SEK</option>
+           <option value="CHF">CHF</option>
+           <option value="ISK">ISK</option>
+           <option value="NOK">NOK</option>
+           <option value="HRK">HRK</option>
+           <option value="RUB">RUB</option>
+           <option value="TRY">TRY</option>
+           <option value="AUD">AUD</option>
+           <option value="BRL">BRL</option>
+           <option value="CAD">CAD</option>
+           <option value="CNY">CNY</option>
+           <option value="HKD">HKD</option>
+           <option value="IDR">IDR</option>
+           <option value="ILS">ILS</option>
+           <option value="INR">INR</option>
+           <option value="KRW">KRW</option>
+           <option value="MXN">MXN</option>
+           <option value="MYR">MYR</option>
+           <option value="NZD">NZD</option>
+           <option value="PHP">PHP</option>
+           <option value="SGD">SGD</option>
+           <option value="THB">THB</option>
+           <option value="ZAR">ZAR</option>
            </select>
     <container>
-    <div className ="flag">
+    <div className ="flag-to-div">
           <img class="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
      </div> 
      </container>    
            <select className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} id="to"> 
-          <option value="USD">USD</option>
+           <option value="USD">USD</option>
+           <option value="JPY">JPY</option>
+           <option value="BGN">BGN</option>
+           <option value="CZK">CZK</option>
+           <option value="DKK">DKK</option>
            <option value="GBP">GBP</option>
+           <option value="HUF">HUF</option>
+           <option value="PLN">PLN</option>
+           <option value="RON">RON</option>
+           <option value="SEK">SEK</option>
+           <option value="CHF">CHF</option>
+           <option value="ISK">ISK</option>
+           <option value="NOK">NOK</option>
+           <option value="HRK">HRK</option>
+           <option value="RUB">RUB</option>
+           <option value="TRY">TRY</option>
+           <option value="AUD">AUD</option>
+           <option value="BRL">BRL</option>
+           <option value="CAD">CAD</option>
+           <option value="CNY">CNY</option>
+           <option value="HKD">HKD</option>
+           <option value="IDR">IDR</option>
+           <option value="ILS">ILS</option>
+           <option value="INR">INR</option>
+           <option value="KRW">KRW</option>
+           <option value="MXN">MXN</option>
+           <option value="MYR">MYR</option>
+           <option value="NZD">NZD</option>
+           <option value="PHP">PHP</option>
+           <option value="SGD">SGD</option>
+           <option value="THB">THB</option>
+           <option value="ZAR">ZAR</option>
            </select> 
   </div> 
   <div className="result">
