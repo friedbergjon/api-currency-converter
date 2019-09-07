@@ -92,12 +92,13 @@ class App extends Component {
           </div>
   </container>
            <select className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} id="from">
+           <option value=" ">   </option> 
            <option value="USD">USD</option>
            <option value="JPY">JPY</option>
            <option value="BGN">BGN</option>
            <option value="CZK">CZK</option>
-           <option value="DKK">DKK</option>
            <option value="GBP">GBP</option>
+           <option value="DKK">DKK</option>
            <option value="HUF">HUF</option>
            <option value="PLN">PLN</option>
            <option value="RON">RON</option>
@@ -130,7 +131,8 @@ class App extends Component {
           <img class="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
      </div> 
      </container>    
-           <select className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} id="to"> 
+           <select className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} id="to">
+           <option value=" ">   </option>   
            <option value="USD">USD</option>
            <option value="JPY">JPY</option>
            <option value="BGN">BGN</option>
