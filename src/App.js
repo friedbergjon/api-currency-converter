@@ -86,20 +86,20 @@ class App extends Component {
          <input className = "amount-input" type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
        </div>
    <div className="from-and-to-input">
- 
-  
+   <container>
+  <div className ="flag">
           <img class="flag-from" src={this.state.flagOn?`${flagUrl + this.state.flagFrom}/shiny/64.png`:null} onChange={this.getCurrencyData}/> 
-         
-  
+          </div>
+  </container>
            <select className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} id="from">
            <option value="USD">USD</option>
            <option value="GBP">GBP</option>
            </select>
-  
-   
+    <container>
+    <div className ="flag">
           <img class="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
-   
-   
+     </div> 
+     </container>    
            <select className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} id="to"> 
           <option value="USD">USD</option>
            <option value="GBP">GBP</option>
