@@ -82,7 +82,7 @@ body {
   }
   .result-label{
       display: flex;
-      margin-bottom: -55%;
+      margin-bottom: -20%;
       justify-content: center;
   }
   
