@@ -74,23 +74,27 @@ class App extends Component {
       <div className="App">  
           <LineTop />
       <form onSubmit={this.getCurrencyData}>
-         <Animation />
-  <div className="amounts">
+        <br></br>
+  <div className="amount">
       <h1>Amount</h1>
         </div>
- <div className = "from-and-to-labels">
-      <h3>Country From</h3>
-      <h3>Country To</h3> 
-      </div> 
-      <div>
-         <input className = "amount-input" type="text" name="amount" value={this.state.amount} placeholder="amount" id="amount" onChange={this.handleInputChange}/>
+      <div className="input-field">
+         <input className = "amount-input" type="text" name="amount" value={this.state.amount} id="amount" onChange={this.handleInputChange}/>
        </div>
+       <div className="animation">
+      <Animation />
+      </div>
+       <div className="result">
+          <input className = "result-submit" type="submit" value="$ Result $"/>     
+    </div> 
+    <div className= "result-label">
+      <h2>{this.state.result > 1? this.state.resultRounded: this.state.result}</h2>   
+    </div>
    <div className="from-and-to-input">
    <container>
+     
+   <h2>Country From</h2>
   <div className ="flag-from-div">
-          <img class="flag-from" src={this.state.flagOn?`${flagUrl + this.state.flagFrom}/shiny/64.png`:null} onChange={this.getCurrencyData}/> 
-          </div>
-  </container>
            <select className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} id="from">
            <option value=" ">   </option> 
            <option value="USD">USD</option>
@@ -126,11 +130,14 @@ class App extends Component {
            <option value="THB">THB</option>
            <option value="ZAR">ZAR</option>
            </select>
+       </div>
+       <div className="flag-from-img">
+       <img class="flag-from" src={this.state.flagOn?`${flagUrl + this.state.flagFrom}/shiny/64.png`:null} onChange={this.getCurrencyData}/> 
+        </div>
+       </container>
     <container>
+    <h2>Country To</h2>
     <div className ="flag-to-div">
-          <img class="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
-     </div> 
-     </container>    
            <select className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} id="to">
            <option value=" ">   </option>   
            <option value="USD">USD</option>
@@ -166,11 +173,12 @@ class App extends Component {
            <option value="THB">THB</option>
            <option value="ZAR">ZAR</option>
            </select> 
-  </div> 
-  <div className="result">
-          <input className = "result-submit" type="submit" value="Result"/>
-          <h2>{this.state.result > 1? this.state.resultRounded: this.state.result}</h2>      
     </div> 
+    <div className="flag-to-img">
+   </div> <img className="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
+  </container>  
+  </div> 
+  
     </form>
    
     
