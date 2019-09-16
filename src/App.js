@@ -178,10 +178,8 @@ class App extends Component {
    </div> <img className="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
   </container>  
   </div> 
-  
     </form>
-   
-    
+    <LineTop />
        </div>
        
     )

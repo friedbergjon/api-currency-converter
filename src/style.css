@@ -23,12 +23,13 @@ body {
   }
 
   .from {
-     
+    height: 30%;
     display: flex;
     justify-content: center; 
   }
 
   .to{
+    height: 30%;
     display: flex;
     justify-content: center;
     
