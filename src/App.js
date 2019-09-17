@@ -88,7 +88,7 @@ class App extends Component {
           <input className = "result-submit" type="submit" value="$ Result $"/>     
     </div> 
     <div className= "result-label">
-      <h2>{this.state.result > 1? this.state.resultRounded: this.state.result}</h2>   
+      <h2 className ="result-text">{this.state.result > 1? this.state.resultRounded: this.state.result}</h2>   
     </div>
    <div className="from-and-to-input">
    <container> 
