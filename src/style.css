@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     background-image: linear-gradient(silver,beige, silver);
-    overflow: hidden;
+    overflow: scroll;
    
 }
 
@@ -145,10 +145,11 @@ body {
   
   }
 
-hr.top-line { 
+.top-line { 
     
     margin-top: 2em;
     margin-bottom: 1%;
+    
     display: block;
     overflow: hidden;
     border-style: inset;
