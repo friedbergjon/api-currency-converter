@@ -177,7 +177,7 @@ hr.bottom-line{
     width: 90%;
     bottom: 0;
     margin-left: 5%;
-    position: fixed;
+    position: relative;
     margin-top: 3%;
    
 }
