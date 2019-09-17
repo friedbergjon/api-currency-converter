@@ -8,7 +8,7 @@ body {
    
    position: center, absolute, fixed;
    display: flex;
-   color: beige;
+   color: goldenrod;
    justify-content: center;
    flex-direction: column;
     max-width: 100%;
@@ -168,7 +168,7 @@ h2{
    
     font-family: 'Playfair Display', serif;
     padding-bottom: 1em;
-    color: beige;
+    color: goldenrod;
 }
 
 h3 {
