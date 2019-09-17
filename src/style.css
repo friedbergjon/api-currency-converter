@@ -76,7 +76,6 @@ body {
      justify-content: center;
       font-size: 1em;
       margin-bottom: 5%;
-      margin-top: 5%;
       font-family: 'Playfair Display', serif;
      
      
@@ -87,6 +86,7 @@ body {
   .result-submit{
      
       font-size: 1em;
+      margin-top:1%;
       margin-bottom: 2em;
       font-family: 'Playfair Display', serif;
       color: green;
@@ -97,6 +97,7 @@ body {
   .result-label{
       display: flex;
       margin-top:1%;
+      padding-top: 1%;
       margin-bottom: 1%;
       justify-content: center;
       color: green;
@@ -105,7 +106,7 @@ body {
   }
 
   .result-text{
-    margin-top:2%;
+    margin-top:4%;
     margin-bottom:5%;
    
   }
@@ -118,8 +119,16 @@ body {
       height: 10%;
        border-radius: 50%;
   }
-    
+  .country-from-text{
+margin : 0 auto;
 
+margin-top: -10%;
+  } 
+.country-to-text{
+    margin : 0 auto;
+    
+    margin-top: -10%;
+  } 
   
   .flag-from-div{
       margin-top: -10%;

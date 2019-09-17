@@ -91,7 +91,7 @@ class App extends Component {
       <h2 className ="result-text">{this.state.result > 1? this.state.resultRounded: this.state.result}</h2>   
     </div>
    <div className="from-and-to-input">
-   <container> 
+   <container className= "country-from-text"> 
    <h2>Country From</h2>
   <div className ="flag-from-div">
            <select className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} id="from">
@@ -134,7 +134,7 @@ class App extends Component {
        <img class="flag-from" src={this.state.flagOn?`${flagUrl + this.state.flagFrom}/shiny/64.png`:null} onChange={this.getCurrencyData}/> 
         </div>
        </container>
-    <container>
+       <container className= "country-to-text"> 
     <h2>Country To</h2>
     <div className ="flag-to-div">
            <select className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} id="to">
