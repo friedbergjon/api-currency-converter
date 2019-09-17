@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import axios from "axios";
 import LineTop from "./components/LineTop"
+import LineBottom from "./components/LineBottom"
 import Animation from "./components/Animation";
 
 
@@ -179,7 +180,7 @@ class App extends Component {
   </container>  
   </div> 
     </form>
-    <LineTop />
+    <LineBottom />
        </div>
        
     )
