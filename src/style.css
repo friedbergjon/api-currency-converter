@@ -177,7 +177,7 @@ hr.bottom-line{
     border-style: inset;
     border-width: 1px;
     width: 90%;
-    position: sticky, bottom;
+    position: fixed, absolute;
     margin-top: 10%;
    
 }
