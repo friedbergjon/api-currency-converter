@@ -167,7 +167,7 @@ margin : 0 auto;
     width: 80%;
     
 }
-/* hr.bottom-line{
+hr.bottom-line{
    
     display: block;
     border-style: inset;
@@ -176,7 +176,7 @@ margin : 0 auto;
    
     margin-top: -20%;
    
-} */
+}
 h1{
     font-family: 'Playfair Display', serif;
     line-height: .4em

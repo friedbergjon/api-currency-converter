@@ -86,14 +86,14 @@ class App extends Component {
        </div>
        
        <div className="result">
-          <input className = "result-submit" type="submit" value="$ Result $"/>     
+          <input className = "result-submit" type="submit" value="$ Convert $"/>     
     </div> 
     <div className= "result-label">
       <h2 className ="result-text">{this.state.result > 1? this.state.resultRounded: this.state.result}</h2>   
     </div>
    <div className="from-and-to-input">
    <container className= "country-from-text"> 
-   <h2>Country From</h2>
+   <h2>Currency From</h2>
   <div className ="flag-from-div">
            <select className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} id="from">
            <option value=" ">   </option> 
@@ -136,7 +136,7 @@ class App extends Component {
         </div>
        </container>
        <container className= "country-to-text"> 
-    <h2>Country To</h2>
+    <h2>Currency To</h2>
     <div className ="flag-to-div">
            <select className = "to" type="text" name="to" value={this.state.to} onChange={this.handleInputChange} id="to">
            <option value=" ">   </option>   
