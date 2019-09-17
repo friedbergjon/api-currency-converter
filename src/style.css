@@ -1,7 +1,7 @@
 body {
     overflow: hidden;
     margin: 0 auto;
-    background-color: grey;
+    background-color: silver;
 }
 
 .App {
@@ -65,6 +65,7 @@ body {
    position: relative, fixed;
    margin-top:2%;
    margin-bottom:2em; 
+  
   }
   
   .result {
@@ -82,15 +83,17 @@ body {
   .result-submit{
      
       font-size: 1em;
-     
+      margin-bottom: 2em;
       font-family: 'Playfair Display', serif;
       color: green;
+      border-radius: 45%;
   }
   .result-label{
       display: flex;
       margin-bottom: 1%;
       justify-content: center;
       color: green;
+     
   }
 
   .result-text{
