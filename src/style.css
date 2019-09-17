@@ -1,7 +1,8 @@
 body {
-    overflow: hidden;
     margin: 0 auto;
-    background-color: silver;
+    background-image: linear-gradient(silver,beige, silver);
+    overflow: hidden;
+   
 }
 
 .App {
@@ -9,6 +10,7 @@ body {
    position: center, absolute, fixed;
    display: flex;
    color: goldenrod;
+   text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
    justify-content: center;
    flex-direction: column;
     max-width: 100%;
@@ -87,6 +89,7 @@ body {
       margin-bottom: 2em;
       font-family: 'Playfair Display', serif;
       color: green;
+      text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
      
       border-radius: 45%;
   }
@@ -96,6 +99,7 @@ body {
       margin-bottom: 1%;
       justify-content: center;
       color: green;
+      text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
      
   }
 
