@@ -41,6 +41,7 @@ body {
   .from-and-to-input {
       display: flex;
       justify-content: space-around;
+      margin-top: -33%;
   
   }
   .from-and-to-labels{
@@ -87,7 +88,7 @@ body {
   }
   .result-label{
       display: flex;
-      margin-bottom: -20%;
+      margin-bottom: 1%;
       justify-content: center;
       color: green;
   }
