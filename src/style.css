@@ -172,13 +172,13 @@ margin : 0 auto;
     
 }
 hr.bottom-line{
-   
-    display: block;
     border-style: inset;
     border-width: 1px;
     width: 90%;
-    position: fixed, absolute;
-    margin-top: 10%;
+    bottom: 0;
+    margin-left: 5%;
+    position: fixed;
+    margin-top: 3%;
    
 }
 h1{
