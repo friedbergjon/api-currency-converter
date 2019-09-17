@@ -43,7 +43,7 @@ body {
   .from-and-to-input {
       display: flex;
       justify-content: space-around;
-      margin-top: -33%;
+      margin-top: -53%;
       
   
   }
@@ -77,7 +77,7 @@ body {
      display: flex;
      justify-content: center;
       font-size: 1em;
-      margin-bottom: 5%;
+  
       font-family: 'Playfair Display', serif;
       color: green;
      
@@ -177,7 +177,7 @@ hr.bottom-line{
     border-width: 1px;
     width: 90%;
    
-    margin-top: -20%;
+    margin-top: 10%;
    
 }
 h1{
