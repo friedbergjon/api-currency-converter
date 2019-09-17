@@ -91,8 +91,7 @@ class App extends Component {
       <h2>{this.state.result > 1? this.state.resultRounded: this.state.result}</h2>   
     </div>
    <div className="from-and-to-input">
-   <container>
-     
+   <container> 
    <h2>Country From</h2>
   <div className ="flag-from-div">
            <select className = "from" type="text" name="from" value={this.state.from} onChange={this.handleInputChange} id="from">
@@ -175,10 +174,13 @@ class App extends Component {
            </select> 
     </div> 
     <div className="flag-to-img">
-   </div> <img className="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
+   <img className="flag-to" src={this.state.flagOn?`${flagUrl + this.state.flagTo}/shiny/64.png`:null} onChange={this.getCurrencyData}/>
+   </div> 
   </container>  
   </div> 
     </form>
+    <br></br>
+ 
     <LineTop />
        </div>
        

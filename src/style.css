@@ -29,6 +29,7 @@ body {
   }
 
   .to{
+    margin-top: -2%;
     height: 30%;
     display: flex;
     justify-content: center;
@@ -103,25 +104,27 @@ body {
   }
   
   .flag-from-div{
-      margin-top: -3%;
+      margin-top: -10%;
       display: flex;
       justify-content: center;
       height: 4em
   }
   .flag-to-div{
-    margin-top: -3%;
+    margin-top: -10%;
     display: flex;
     justify-content: center;
     height: 4em
 }
 
-  .flag-frome-img{
+  .flag-from-img{
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
   }
   .flag-to-img{
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
   }
 
 hr.top-line { 
@@ -131,7 +134,7 @@ hr.top-line {
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    width: 60%;
+    width: 80%;
 }
 /* hr.bottom-line{
    
@@ -145,7 +148,6 @@ hr.top-line {
 } */
 h1{
     font-family: 'Playfair Display', serif;
-  
     line-height: .4em
     /* https://stackoverflow.com/questions/2539207/how-to-change-the-strike-out-line-through-thickness-in-css */
     
