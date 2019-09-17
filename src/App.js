@@ -74,16 +74,16 @@ class App extends Component {
       <div className="App">  
           <LineTop />
       <form onSubmit={this.getCurrencyData}>
-        <br></br>
+        <div className="animation">
+      <Animation />
+      </div>
   <div className="amount">
       <h1>Amount</h1>
         </div>
       <div className="input-field">
          <input className = "amount-input" type="text" name="amount" value={this.state.amount} id="amount" onChange={this.handleInputChange}/>
        </div>
-       <div className="animation">
-      <Animation />
-      </div>
+       
        <div className="result">
           <input className = "result-submit" type="submit" value="$ Result $"/>     
     </div> 
@@ -179,8 +179,6 @@ class App extends Component {
   </container>  
   </div> 
     </form>
-    <br></br>
- 
     <LineTop />
        </div>
        

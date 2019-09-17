@@ -53,8 +53,8 @@ body {
       display: flex;
       justify-content: center;
       position: relative, fixed;
-      margin-top:6em; 
-      margin-bottom:-6em;  
+      margin-top:2em; 
+      margin-bottom:2em;  
   }
   
 
@@ -62,7 +62,8 @@ body {
    display: flex;
    justify-content: center;
    position: relative, fixed;
-   margin-top: 2%;
+   margin-top:2%;
+   margin-bottom:2em; 
   }
   
   .result {
