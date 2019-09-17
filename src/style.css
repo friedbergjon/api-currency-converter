@@ -44,11 +44,13 @@ body {
       display: flex;
       justify-content: space-around;
       margin-top: -33%;
+      
   
   }
   .from-and-to-labels{
      display: flex;
      justify-content: center; 
+     
   }
 
   
@@ -96,9 +98,9 @@ body {
   }
   .result-label{
       display: flex;
-      margin-top:1%;
-      padding-top: 1%;
-      margin-bottom: 1%;
+      margin-top:3%;
+     
+      margin-bottom: 15%;
       justify-content: center;
       color: green;
       text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
@@ -106,7 +108,7 @@ body {
   }
 
   .result-text{
-    margin-top:4%;
+    margin-top:5%;
     margin-bottom:5%;
     color: green;
   }
@@ -121,6 +123,7 @@ body {
   }
   .country-from-text{
 margin : 0 auto;
+
 
 
   } 
