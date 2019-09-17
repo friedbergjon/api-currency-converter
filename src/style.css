@@ -49,7 +49,7 @@ body {
   .amount {
       display: flex;
       justify-content: center;
-        margin-bottom: -1%;
+     
       margin-top:4em;  
   }
   .amount-input{
@@ -90,7 +90,7 @@ body {
   }
 
   .result-text{
- 
+    margin-bottom:5%;
    
   }
   
@@ -102,12 +102,8 @@ body {
       height: 10%;
        border-radius: 50%;
   }
-  .flag {  
     
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: -1%
-  }
+
   
   .flag-from-div{
       margin-top: -10%;
@@ -125,15 +121,17 @@ body {
   .flag-from-img{
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+  
   }
   .flag-to-img{
+    margin-top: -2%;
     display: flex;
     justify-content: center;
-    margin-bottom: 5%;
+  
   }
 
 hr.top-line { 
+    
     margin-top: -2em;
     margin-bottom: -5%;
     display: block;
@@ -141,6 +139,7 @@ hr.top-line {
     border-style: inset;
     border-width: 1px;
     width: 80%;
+    
 }
 /* hr.bottom-line{
    
